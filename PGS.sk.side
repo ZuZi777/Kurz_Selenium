@@ -1,0 +1,192 @@
+{
+  "id": "511f8c7c-44b7-4e78-a133-f89b8d0d9410",
+  "version": "2.0",
+  "name": "P01_Prikazy_Open",
+  "url": "https://opensource-demo.orangehrmlive.com/",
+  "tests": [{
+    "id": "796543e3-d2e2-4377-8e9c-a9de3e4490af",
+    "name": "TC_001_Hladanie_Collectorky",
+    "commands": [{
+      "id": "1887bd61-2aba-4bab-a39c-5aafb17b73b6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8f58740-da07-4058-a798-7df573e111a1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1030x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51f016d2-0576-4cec-97ec-b5e3f6cfa4b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=transcript",
+      "targets": [
+        ["id=transcript", "id"],
+        ["css=#transcript", "css:finder"],
+        ["xpath=//input[@id='transcript']", "xpath:attributes"],
+        ["xpath=//form[@id='msearchf']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "collector"
+    }, {
+      "id": "859c3572-dcb8-4d98-86df-b1f209a95705",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn > .hidden-xs",
+      "targets": [
+        ["css=.btn > .hidden-xs", "css:finder"],
+        ["xpath=//div[@id='top_btns_b']/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div/div[2]/div[2]/div/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'HĽADAŤ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c95dd035-41bf-4d2e-aa2b-029f017f942f",
+      "comment": "",
+      "command": "click",
+      "target": "id=product_state_2",
+      "targets": [
+        ["id=product_state_2", "id"],
+        ["css=#product_state_2", "css:finder"],
+        ["xpath=//input[@id='product_state_2']", "xpath:attributes"],
+        ["xpath=//div[@id='filter_product_state']/div[2]/label/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cad5e6c8-3e77-4759-bf34-5a5c01f25a53",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w_product_wrapper:nth-child(2) .lp_img",
+      "targets": [
+        ["css=.w_product_wrapper:nth-child(2) .lp_img", "css:finder"],
+        ["xpath=//img[@alt='foto Rocket League (Collector’s Edition) [XBOX ONE] - BAZÁR (použitý tovar)']", "xpath:img"],
+        ["xpath=//div[@id='res_products_wrapper_data']/div[2]/a/div/img", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fbe6cced-82f0-4276-957d-ddf1c160424b",
+    "name": "TC_002_Otvorenie_stranky",
+    "commands": [{
+      "id": "96ec7ea5-4137-48ed-9f1b-70fa08cc9176",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.google.sk",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b717d035-3d3e-4bb0-98af-298a9a3c29d4",
+      "comment": "",
+      "command": "open",
+      "target": "http://www.pgs.sk",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "14fbf918-68e4-4eef-a692-a08440b4efdb",
+    "name": "TC003_Opensource_Demo_Prihlasenie_Odhlasenie",
+    "commands": [{
+      "id": "2cc596bd-539b-44bc-9e18-eea8ed0246b5",
+      "comment": "",
+      "command": "open",
+      "target": "https://opensource-demo.orangehrmlive.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "226dc057-1a0b-45df-a8d4-e88889ef995a",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Admin"
+    }, {
+      "id": "40b06d8d-38b2-4c3a-ae23-b420d24033a8",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e044a9c7-ea43-40aa-bc16-8705afd4fca4",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.oxd-input--focus", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "admin123"
+    }, {
+      "id": "f8e954e4-ec9b-4701-bc19-2132daf80f86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oxd-button",
+      "targets": [
+        ["css=.oxd-button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='app']/div/div/div/div/div[2]/div[2]/form/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b8f175c-fa63-4cc1-9cc6-5779115c8064",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bi-caret-down-fill",
+      "targets": [
+        ["css=.bi-caret-down-fill", "css:finder"],
+        ["xpath=//div[@id='app']/div/div/header/div/div[3]/ul/li/span/i", "xpath:idRelative"],
+        ["xpath=//span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e53add6-7101-4c33-8c41-1768cc8d047a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=li:nth-child(4) > .oxd-userdropdown-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='app']/div/div/header/div/div[3]/ul/li/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/web/index.php/auth/logout')]", "xpath:href"],
+        ["xpath=//li/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "160a92ad-dbda-40be-a83b-f91721323be2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["796543e3-d2e2-4377-8e9c-a9de3e4490af"]
+  }],
+  "urls": ["https://www.pgs.sk/", "https://opensource-demo.orangehrmlive.com/"],
+  "plugins": []
+}
